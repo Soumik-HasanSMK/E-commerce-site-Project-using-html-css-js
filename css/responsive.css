@@ -1,0 +1,167 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .product-details-content {
+        flex-direction: column;
+    }
+
+    .product-images,
+    .product-info {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .product-images {
+        margin-bottom: 30px;
+    }
+
+    .shop-content {
+        flex-direction: column;
+    }
+
+    .shop-sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .checkout-grid {
+        flex-direction: column;
+    }
+
+    .order-summary {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .main-header .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-nav li {
+        flex: 1 0 auto;
+    }
+
+    .hero-slider {
+        height: 400px;
+    }
+
+    .slide-content h2 {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .form-group {
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .top-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-header .left,
+    .top-header .right {
+        margin-bottom: 10px;
+    }
+
+    .hero-slider {
+        height: 300px;
+    }
+
+    .slide-content {
+        padding: 20px;
+    }
+
+    .slide-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+    }
+
+    .coupon {
+        margin-bottom: 15px;
+    }
+
+    .coupon input {
+        width: 100%;
+    }
+
+    .update-cart {
+        width: 100%;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .quantity {
+        margin-right: 0;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    .add-to-cart,
+    .add-to-wishlist {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .thumbnail-images {
+        flex-wrap: wrap;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright .container {
+        flex-direction: column;
+    }
+
+    .payment-methods {
+        margin-top: 15px;
+    }
+}

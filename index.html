@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OurShop - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="left">
+          <span><i class="fas fa-phone"></i> +880 1234 567890</span>
+          <span><i class="fas fa-envelope"></i> support@ourshop.com</span>
+        </div>
+        <div class="right">
+          <a href="login.html"><i class="fas fa-user"></i> Login</a>
+          <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="index.html">OurShop</a></h1>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search products..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-icons">
+          <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+          <a href="cart.html"
+            ><i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li class="dropdown">
+            <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="shop.html?category=electronics">Electronics</a>
+              <a href="shop.html?category=fashion">Fashion</a>
+              <a href="shop.html?category=home">Home & Living</a>
+              <a href="shop.html?category=sports">Sports</a>
+              <a href="shop.html?category=education">Education</a>
+              <a href="shop.html?category=hardware">Hardware</a>
+            </div>
+          </li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+      <div
+        class="slide active"
+        style="
+          background-image: url('https://earlyyearsshop.ie/wp-content/uploads/2022/06/Summer-Flash-Sale-for-2-Weeks-ONLY.png');
+        "
+      >
+        <div class="container">
+          <div class="slide-content">
+            <h2>Summer Collection 2025</h2>
+            <p>Up to 50% off on selected items</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://ik.imagekit.io/techloot/wp-content/uploads/2024/12/tr:n-lt_featured_image_single_1x/Screenshot_2043.jpg');
+        "
+      >
+        <div class="container">
+          <div class="slide-content">
+            <h2>New Tech Gadgets</h2>
+            <p>The latest technology at your fingertips</p>
+            <a href="shop.html?category=electronics" class="btn">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <div class="feature-box">
+          <i class="fas fa-truck"></i>
+          <h3>Free Shipping</h3>
+          <p>On all orders over ৳1000</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-undo"></i>
+          <h3>Easy Returns</h3>
+          <p>30 days return policy</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-lock"></i>
+          <h3>Secure Payment</h3>
+          <p>100% secure payment</p>
+        </div>
+        <div class="feature-box">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>Dedicated support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Shop by Categories</h2>
+        <div class="category-grid">
+          <div class="category-item">
+            <img
+              src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3cAQ87K4KsHjfXGrQdkzBZ/b47523eae1fb2ac5b12bdf6619d71f2f/GettyImages-1307216100.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000"
+              alt="Electronics"
+            />
+            <div class="category-content">
+              <h3>Electronics</h3>
+              <a href="shop.html?category=electronics" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="category-item">
+            <img
+              src="https://www.cato.org/sites/cato.org/files/styles/aside_3x/public/2023-11/fast-fashion2.jpeg?itok=72ek8bxI"
+              alt="Fashion"
+            />
+            <div class="category-content">
+              <h3>Fashion</h3>
+              <a href="shop.html?category=fashion" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="category-item">
+            <img
+              src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/master/pass/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg"
+              alt="Home & Living"
+            />
+            <div class="category-content">
+              <h3>Home & Living</h3>
+              <a href="shop.html?category=home" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="category-item">
+            <img
+              src="https://media.gettyimages.com/id/598160468/vector/set-of-sports-equipment.jpg?s=1024x1024&w=gi&k=20&c=oEXUpal4v-gC8oiKHvYYv-_M1AhSXzWQRerP4nonxUI="
+              alt="Sports"
+            />
+            <div class="category-content">
+              <h3>Sports</h3>
+              <a href="shop.html?category=sports" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <!-- Product items will be loaded via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-content">
+          <h2>Special Offer</h2>
+          <p>Get 30% off on all electronics products</p>
+          <a href="shop.html?category=electronics" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Products -->
+    <section class="latest-products">
+      <div class="container">
+        <h2 class="section-title">Latest Products</h2>
+        <div class="product-grid">
+          <!-- Product items will be loaded via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial active">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Great products and excellent customer service. I will definitely
+              shop here again!"
+            </p>
+            <div class="customer">
+              <img
+                src="https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-6/495072095_2145601035883590_90524411509430751_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGylDXbSvp29T3pq03Gm7854zM34CGPzazjMzfgIY_NrJOWQhev9OG8igsHP2yBZOgEym8Z6ByN33yA7lXoU10H&_nc_ohc=HcEXx4uFPdoQ7kNvwGySyri&_nc_oc=AdlhuBiJYou5Odl7OwJBHwUgSeyMK1-a8BPxwhs0PogcCl3gYKmGAZbUMyMv8GONuKU&_nc_zt=23&_nc_ht=scontent.fdac80-1.fna&_nc_gid=ywSQ2j4R11GTiMGeiTNmvQ&oh=00_AfVhEjAvDTTZ3_DURHAqkBX_6jlE73ExhM5Q5G55-nLQyA&oe=689CB78E"
+                alt="Customer"
+              />
+              <h4>Soumik Hasan</h4>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>
+              "Fast delivery and good quality products. Very satisfied with my
+              purchase."
+            </p>
+            <div class="customer">
+              <img
+                src="https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-6/484853240_1832379764245968_2798732650416980754_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHWTFDBccJP2usF2hYvo2brgNzEKu6zBCaA3MQq7rMEJkVYuFrQ-ERoigGaOkPlxDWOSNDOcSGHY7Dw1XkY6cum&_nc_ohc=cP-ma10-LFcQ7kNvwHAtwJo&_nc_oc=AdkuAPQTMtT6GrAWDipYQpKTqpj86WnTd2SdLexxCaf-m02RIh16Mp_YOKqUN3cT6jw&_nc_zt=23&_nc_ht=scontent.fdac80-1.fna&_nc_gid=FNXYgQ38md5sWci4lsEVPw&oh=00_AfV5GLABgD3mO426Qle2HrhE4q-M8JAUo6YgvlVuiNfTmQ&oe=689C98D7"
+                alt="Customer"
+              />
+              <h4>Abdul Alim</h4>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Best prices in town with regular discounts. My go-to online shop
+              now!"
+            </p>
+            <div class="customer">
+              <img
+                src="https://scontent.fdac80-1.fna.fbcdn.net/v/t39.30808-6/337035912_252655963761764_2327793443246680178_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEU9RE_BHtRsoIAdOw_H0aIKgZ9jvV2TvMqBn2O9XZO8zMDAQhtiIbvomKZcZBtjb7TxaLDk70VUQCYL0xp1SwB&_nc_ohc=NYeaYs3mbU4Q7kNvwHj_gZX&_nc_oc=AdmqUYTFgaEVyKdK9gIVkvPvC-6oc8Bg5nwsqzj1KZfowWybURGl2MqjYxRhPE38TdU&_nc_zt=23&_nc_ht=scontent.fdac80-1.fna&_nc_gid=GjYonM9S9m8pTtRLh9oJ2A&oh=00_AfUKc49uaRK2YqO4xJk3I3cWtxQ0boEnlVIj2Efk7mwdBA&oe=689CA873"
+                alt="Customer"
+              />
+              <h4>Nahid</h4>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest updates on new products and upcoming sales</p>
+          <form>
+            <input type="email" placeholder="Your email address" />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>OurShop</h3>
+            <p>
+              Your one-stop shop for all your needs. Quality products at
+              affordable prices.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="shop.html?category=electronics">Electronics</a></li>
+              <li><a href="shop.html?category=fashion">Fashion</a></li>
+              <li><a href="shop.html?category=home">Home & Living</a></li>
+              <li><a href="shop.html?category=sports">Sports</a></li>
+              <li><a href="shop.html?category=education">Education</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Road, Dhaka,
+                Bangladesh
+              </li>
+              <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+              <li><i class="fas fa-envelope"></i> info@ourshop.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>&copy; 2025 OurShop. All Rights Reserved.</p>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-bkash"></i>
+            <i class="fab fa-nagad"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

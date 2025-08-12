@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OurShop - Checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="left">
+          <span><i class="fas fa-phone"></i> +880 1234 567890</span>
+          <span><i class="fas fa-envelope"></i> support@ourshop.com</span>
+        </div>
+        <div class="right">
+          <a href="login.html"><i class="fas fa-user"></i> Login</a>
+          <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="index.html">OurShop</a></h1>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search products..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-icons">
+          <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+          <a href="cart.html"
+            ><i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li class="dropdown">
+            <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="shop.html?category=electronics">Electronics</a>
+              <a href="shop.html?category=fashion">Fashion</a>
+              <a href="shop.html?category=home">Home & Living</a>
+              <a href="shop.html?category=sports">Sports</a>
+              <a href="shop.html?category=education">Education</a>
+              <a href="shop.html?category=hardware">Hardware</a>
+            </div>
+          </li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Checkout</h1>
+        <p>Complete your purchase</p>
+      </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-content">
+      <div class="container">
+        <div class="checkout-grid">
+          <div class="checkout-form">
+            <h2>Billing Details</h2>
+            <form id="checkout-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name *</label>
+                  <input type="text" id="first-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name *</label>
+                  <input type="text" id="last-name" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name (Optional)</label>
+                <input type="text" id="company" />
+              </div>
+              <div class="form-group">
+                <label for="country">Country / Region *</label>
+                <select id="country" required>
+                  <option value="">Select a country / region...</option>
+                  <option value="Bangladesh" selected>Bangladesh</option>
+                  <option value="India">India</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="street">Street Address *</label>
+                <input
+                  type="text"
+                  id="street"
+                  placeholder="House number and street name"
+                  required
+                />
+                <input
+                  type="text"
+                  id="apartment"
+                  placeholder="Apartment, suite, unit, etc. (optional)"
+                />
+              </div>
+              <div class="form-group">
+                <label for="city">Town / City *</label>
+                <input type="text" id="city" required />
+              </div>
+              <div class="form-group">
+                <label for="district">District *</label>
+                <select id="district" required>
+                  <option value="">Select a district...</option>
+                  <option value="Dhaka">Dhaka</option>
+                  <option value="Chittagong">Chittagong</option>
+                  <option value="Sylhet">Sylhet</option>
+                  <option value="Rajshahi">Rajshahi</option>
+                  <option value="Khulna">Khulna</option>
+                  <option value="Barisal">Barisal</option>
+                  <option value="Rangpur">Rangpur</option>
+                  <option value="Mymensingh">Mymensingh</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="postcode">Postcode / ZIP *</label>
+                <input type="text" id="postcode" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="order-notes">Order Notes (Optional)</label>
+                <textarea
+                  id="order-notes"
+                  placeholder="Notes about your order, e.g. special notes for delivery"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="order-summary">
+            <h2>Your Order</h2>
+            <div class="order-details">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody id="order-items">
+                  <!-- Order items will be loaded via JavaScript -->
+                  <tr class="empty-order">
+                    <td colspan="2">Your cart is empty.</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Subtotal</th>
+                    <td id="order-subtotal">৳0.00</td>
+                  </tr>
+                  <tr>
+                    <th>Shipping</th>
+                    <td id="order-shipping">৳60.00</td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <td id="order-total">৳0.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="payment-method">
+              <h3>Payment Method</h3>
+              <div class="method">
+                <input
+                  type="radio"
+                  name="payment"
+                  id="cash-on-delivery"
+                  checked
+                />
+                <label for="cash-on-delivery">Cash on Delivery</label>
+                <div class="method-desc">Pay with cash upon delivery.</div>
+              </div>
+              <div class="method">
+                <input type="radio" name="payment" id="bkash" />
+                <label for="bkash">bKash</label>
+                <div class="method-desc">Pay via bKash mobile payment.</div>
+              </div>
+              <div class="method">
+                <input type="radio" name="payment" id="nagad" />
+                <label for="nagad">Nagad</label>
+                <div class="method-desc">Pay via Nagad mobile payment.</div>
+              </div>
+              <div class="method">
+                <input type="radio" name="payment" id="card" />
+                <label for="card">Credit/Debit Card</label>
+                <div class="method-desc">
+                  Pay with your credit or debit card.
+                </div>
+              </div>
+              <div class="terms">
+                <input type="checkbox" id="terms" required />
+                <label for="terms"
+                  >I have read and agree to the website
+                  <a href="#">terms and conditions</a> *</label
+                >
+              </div>
+              <button
+                type="submit"
+                form="checkout-form"
+                class="btn place-order"
+              >
+                Place Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest updates on new products and upcoming sales</p>
+          <form>
+            <input type="email" placeholder="Your email address" />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>OurShop</h3>
+            <p>
+              Your one-stop shop for all your needs. Quality products at
+              affordable prices.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="shop.html?category=electronics">Electronics</a></li>
+              <li><a href="shop.html?category=fashion">Fashion</a></li>
+              <li><a href="shop.html?category=home">Home & Living</a></li>
+              <li><a href="shop.html?category=sports">Sports</a></li>
+              <li><a href="shop.html?category=education">Education</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Road, Dhaka,
+                Bangladesh
+              </li>
+              <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+              <li><i class="fas fa-envelope"></i> info@ourshop.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>&copy; 2025 OurShop. All Rights Reserved.</p>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-bkash"></i>
+            <i class="fab fa-nagad"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
