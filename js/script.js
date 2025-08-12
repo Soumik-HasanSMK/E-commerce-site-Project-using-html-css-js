@@ -53,7 +53,7 @@ const products = [
     },
     {
         id: 3,
-        name: "Wireless Keyboard and Mouse Combo",
+        name: "Wireless Keyboard and Mouse",
         category: "electronics",
         price: 1799,
         oldPrice: 2199,
